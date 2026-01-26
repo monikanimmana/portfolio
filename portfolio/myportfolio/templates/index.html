@@ -70,8 +70,8 @@
     <div class="container">
         <h2 class="section-title">Skills</h2>
         <div class="skills-grid">
-            {% if skills %}
-                {% for skill in skills %}
+            {% if skill %}
+                {% for skill in skill %}
                     {% if skill %}
                     <div class="skill-card">
                         {% if skill.icon %}
@@ -154,8 +154,8 @@
             <i class="fab fa-whatsapp"></i>
         </a>
         {% endif %}
-        {% if url_link and url_link.mail %}
-        <a href="{{ url_link.mail }}" class="email">
+        {% if url_link and url_link.email %}
+        <a href="{{ url_link.email }}" class="email">
             <i class="fas fa-envelope"></i>
         </a>
         {% endif %}

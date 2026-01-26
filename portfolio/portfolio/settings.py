@@ -26,9 +26,7 @@ SECRET_KEY =os.environ.get("SECRET_KEY","django-insecure-local-dev-key")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = [
-    'monikanimmana-portfolio.onrender.com',
-]
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -70,6 +68,9 @@ TEMPLATES = [
         },
     },
 ]
+
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
 
 WSGI_APPLICATION = 'portfolio.wsgi.application'
 
