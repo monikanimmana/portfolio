@@ -310,3 +310,122 @@ button:hover, .btn:hover {
         padding: 1.6rem;
     }
 }
+/* ================= MOBILE RESPONSIVE ENHANCEMENT ================= */
+
+/* Tablets & below */
+@media (max-width: 768px) {
+
+    /* Navbar */
+    .navbar .container {
+        flex-direction: column;
+        gap: 14px;
+        text-align: center;
+    }
+
+    .nav-links {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+
+    /* Page Header */
+    .page-header {
+        padding: 3.5rem 0;
+    }
+
+    .page-header h2 {
+        font-size: 2.2rem;
+    }
+
+    .page-header p {
+        font-size: 0.95rem;
+    }
+
+    /* Sections */
+    .section {
+        padding: 4rem 0;
+    }
+
+    .section-title {
+        font-size: 1.9rem;
+    }
+
+    /* Education */
+    .education-grid {
+        grid-template-columns: 1fr;
+        gap: 1.8rem;
+    }
+
+    .edu-card {
+        margin-bottom: 0;
+    }
+
+    /* Results */
+    .result-grid {
+        grid-template-columns: 1fr;
+        gap: 1.6rem;
+    }
+
+    /* Certificates */
+    .certificate-grid {
+        padding: 0 10px;
+    }
+
+    .certificate-card {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.6rem;
+    }
+
+    .certificate-card button {
+        align-self: flex-start;
+    }
+
+    /* Resume */
+    .resume-box .btn {
+        width: 100%;
+        max-width: 320px;
+    }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+
+    /* Titles */
+    .section-title {
+        font-size: 1.6rem;
+        margin-bottom: 2.2rem;
+    }
+
+    .page-header h2 {
+        font-size: 1.7rem;
+    }
+
+    .page-header p {
+        font-size: 0.9rem;
+    }
+
+    /* Cards */
+    .edu-card,
+    .result-card {
+        padding: 1.4rem;
+        border-radius: 14px;
+    }
+
+    .edu-card h4 {
+        font-size: 1.2rem;
+    }
+
+    /* Buttons */
+    button,
+    .btn {
+        font-size: 0.9rem;
+        padding: 0.55rem 1.3rem;
+    }
+
+    /* Footer */
+    .footer {
+        font-size: 0.85rem;
+        padding: 1.3rem 0;
+    }
+}

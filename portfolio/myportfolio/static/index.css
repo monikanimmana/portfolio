@@ -592,3 +592,143 @@ body {
     justify-items: center;
 }
 
+/* ================= MOBILE RESPONSIVE ================= */
+
+/* Tablets & below */
+@media (max-width: 768px) {
+
+    /* Navbar */
+    .navbar .container {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 14px;
+    }
+
+    /* Hero */
+    .hero {
+        min-height: auto;
+        padding: 4rem 0;
+    }
+
+    .hero-content {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .hero-text h2 {
+        font-size: 2.2rem;
+    }
+
+    .hero-text h3 {
+        font-size: 1.2rem;
+    }
+
+    .hero-text p {
+        margin: auto;
+    }
+
+    .hero-image img {
+        width: 220px;
+        height: 220px;
+    }
+
+    /* Sections spacing */
+    .about,
+    .skills,
+    .projects,
+    .contact {
+        padding: 6rem 0;
+    }
+
+    /* Skills */
+    .skills-grid {
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        gap: 1.2rem;
+    }
+
+    /* Projects */
+    .projects-grid {
+        grid-template-columns: 1fr;
+        gap: 1.8rem;
+    }
+
+    .project-image img {
+        height: 170px;
+    }
+
+    /* Social Links */
+    .social-links {
+        justify-content: center;
+        margin: 30px 0;
+    }
+
+    /* Contact */
+    .contact-form {
+        padding: 0 12px;
+    }
+}
+
+/* Small phones */
+@media (max-width: 480px) {
+
+    /* Titles */
+    .section-title {
+        font-size: 1.6rem;
+    }
+
+    /* Hero text */
+    .hero-text h2 {
+        font-size: 1.8rem;
+    }
+
+    .hero-text h3 {
+        font-size: 1.05rem;
+    }
+
+    .hero-text p {
+        font-size: 0.95rem;
+    }
+
+    /* Buttons */
+    .btn {
+        padding: 0.6rem 1.3rem;
+        font-size: 0.9rem;
+    }
+
+    /* Skills */
+    .icons {
+        width: 60px;
+        height: 60px;
+    }
+
+    .icons i {
+        font-size: 1.8rem;
+    }
+
+    /* Projects */
+    .project-content {
+        padding: 1.3rem;
+    }
+
+    .project-content h3 {
+        font-size: 1.15rem;
+    }
+
+    .project-content p {
+        font-size: 0.9rem;
+    }
+
+    /* Social icons */
+    .social-links a {
+        width: 40px;
+        height: 40px;
+        font-size: 16px;
+    }
+}
