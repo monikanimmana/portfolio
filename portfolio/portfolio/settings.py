@@ -120,10 +120,12 @@ USE_TZ = True
 # ]
 
 STATIC_URL = '/static/'
-
-
 STATIC_ROOT = BASE_DIR / "staticfiles"
 
+# Tell Django where to find app-level static folders
+STATICFILES_DIRS = [
+    BASE_DIR / "myportfolio" / "static",   # add this
+]
 
 
 # Use WhiteNoise to serve static files in production
