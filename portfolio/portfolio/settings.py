@@ -121,9 +121,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATICFILES_DIRS = [
-    BASE_DIR / "myportfolio" / "static",
-]
 
 STATIC_ROOT = BASE_DIR / "staticfiles"
 
