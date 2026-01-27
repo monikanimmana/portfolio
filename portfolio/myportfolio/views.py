@@ -8,7 +8,7 @@ def Home(request):
     skill = Skill.objects.all()
     projects = Project.objects.all()
     url_link = SocialMedia.objects.first()
-    return render(request, 'index.html' , {
+    return render(request, 'portfolio_html/index.html' , {
         'intro' : intro,
         'skill': skill,
         'projects': projects,
@@ -19,7 +19,7 @@ def Projects(request, id):
     project = get_object_or_404(Project, id=id)
     intro = Intro.objects.first()
 
-    return render(request, 'project.html', {
+    return render(request, 'portfolio_html/project.html', {
         'project': project,
         'intro': intro,
     })
@@ -44,7 +44,7 @@ def Academic(request):
     academic_result = Academic_Result.objects.all()
     academic_certificate = Academic_Certificate.objects.all()
     resume = Resume.objects.first()
-    return render(request , 'academic.html' , {
+    return render(request , 'portfolio_html/academic.html' , {
         'intro' : intro,
         'academic_qualification' : academic_qualification,
         'academic_result' : academic_result,
