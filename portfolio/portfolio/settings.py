@@ -60,6 +60,7 @@ TEMPLATES = [
     },
 ]
 
+MEDIA_URL = '/media/'
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 
@@ -120,8 +121,5 @@ USE_TZ = True
 # ]
 
 STATIC_URL = '/static/'
-STATIC_ROOT = BASE_DIR / "staticfiles"
-
-
-# Use WhiteNoise to serve static files in production
-STATICFILES_STORAGE = "whitenoise.storage.StaticFilesStorage"
+STATIC_ROOT = BASE_DIR / 'staticfiles'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
