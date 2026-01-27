@@ -1,12 +1,11 @@
 from pathlib import Path
 import os
-import dj_database_url
 from dotenv import load_dotenv
-
-# Load local .env (optional)
+import dj_database_url
 load_dotenv()
 
 BASE_DIR = Path(__file__).resolve().parent.parent
+
 
 # SECURITY
 SECRET_KEY = os.getenv("SECRET_KEY", "django-insecure-local-dev-key")
@@ -61,7 +60,8 @@ TEMPLATES = [
 ]
 
 MEDIA_URL = '/media/'
-DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
+MEDIA_ROOT = BASE_DIR / 'media'
+# DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 
 CLOUDINARY_STORAGE = {
@@ -136,3 +136,4 @@ STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
+MEDIA_ROOT = BASE_DIR / 'media'
