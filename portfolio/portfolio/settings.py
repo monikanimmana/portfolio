@@ -113,11 +113,20 @@ USE_TZ = True
 # -----------------------
 # Static & Media files
 # -----------------------
+# STATIC_URL = '/static/'
+# STATIC_ROOT = BASE_DIR / 'staticfiles'
+# STATICFILES_DIRS = [
+#     BASE_DIR / 'static',
+# ]
+
 STATIC_URL = '/static/'
-STATIC_ROOT = BASE_DIR / 'staticfiles'
+
 STATICFILES_DIRS = [
-    BASE_DIR / 'static',
+    BASE_DIR / "myportfolio" / "static",
 ]
+
+STATIC_ROOT = BASE_DIR / "staticfiles"
+
 
 
 # Use WhiteNoise to serve static files in production
