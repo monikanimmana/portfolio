@@ -127,4 +127,4 @@ STATIC_ROOT = BASE_DIR / "staticfiles"
 
 
 # Use WhiteNoise to serve static files in production
-STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
+STATICFILES_STORAGE = "whitenoise.storage.StaticFilesStorage"
