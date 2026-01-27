@@ -13,3 +13,6 @@ db.sqlite3
 
 # Logs
 *.log
+
+# Collected static files (Django)
+staticfiles/
