@@ -9,7 +9,7 @@ class Intro(models.Model):
     role = models.CharField(max_length=30)
     introduction = models.TextField(default="Hi")
     AboutMe = models.TextField()
-    Resume = models.FileField(upload_to = 'resume_pdf/', blank= True , null=True)
+    Resume = models.ImageField(upload_to = 'resume_pdf/',storage=ImageStorage(), blank= True , null=True)
     footer = models.CharField(max_length=20)
 
     def __str__(self):
@@ -25,7 +25,7 @@ class Skill(models.Model):
 class Project(models.Model):
     project_title = models.CharField(max_length=100)
     highlights = models.TextField(default="No highlights added yet.")
-    project_image = models.ImageField(upload_to='project_image/', blank=True , null = True)
+    project_image = models.ImageField(upload_to='project_image/',storage=ImageStorage(), blank=True , null = True)
     project_description = models.TextField()
     project_overview = models.TextField(default="Project description will be updated soon.")
     project_challenges = models.TextField(blank=True, null=True)
@@ -64,7 +64,7 @@ class Academic_Qualification(models.Model):
 class Academic_Result(models.Model):
     semester_number = models.PositiveIntegerField()
     SGPA_value = models.DecimalField(max_digits=4,decimal_places=2)
-    result_pdf = models.FileField(upload_to='result_pdf/',blank=True,null=True)
+    result_pdf = models.ImageField(upload_to='result_pdf/',storage=ImageStorage(),blank=True,null=True)
 
     def __str__(self):
         return f"Semester  {self.semester_number}"
@@ -72,14 +72,14 @@ class Academic_Result(models.Model):
 class Academic_Certificate(models.Model):
     certificate_title = models.CharField(max_length=50)
     certificate_platform_name = models.CharField(max_length=50,blank=True,null=True)
-    certificate_pdf = models.FileField(upload_to='certificate_pdf/',blank=True,null=True)
+    certificate_pdf = models.ImageField(upload_to='certificate_pdf/',storage=ImageStorage(),blank=True,null=True)
 
     def __str__(self):
         return self.certificate_title
     
 class Resume(models.Model):
     resume_title = models.CharField(max_length=50)
-    resume_pdf = models.FileField(upload_to='resume/')
+    resume_pdf = models.ImageField(upload_to='resume/',storage=ImageStorage())
 
     def __str__(self):
         return self.resume_title
