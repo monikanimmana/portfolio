@@ -30,7 +30,6 @@ class Project(models.Model):
     project_overview = models.TextField(default="Project description will be updated soon.")
     project_challenges = models.TextField(blank=True, null=True)
     github_link = models.URLField(blank=True,null=True)
-    live_demo = models.URLField(blank=True, null=True)
 
     def __str__(self):
         return self.project_title
@@ -71,7 +70,6 @@ class Academic_Result(models.Model):
     
 class Academic_Certificate(models.Model):
     certificate_title = models.CharField(max_length=50)
-    certificate_platform_name = models.CharField(max_length=50,blank=True,null=True)
     certificate_pdf = models.ImageField(upload_to='certificate_pdf/',storage=ImageStorage(),blank=True,null=True)
 
     def __str__(self):
