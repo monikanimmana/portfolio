@@ -1,10 +1,11 @@
 from django.db import models
-
+from .storages import ImageStorage
+from cloudinary.models import CloudinaryField
 # Create your models here.
 class Intro(models.Model):
     logo_name = models.CharField(max_length=20, default="Your Name")
     profile_name = models.CharField(max_length=20,default="Your Name")
-    profile_image = models.ImageField(upload_to='myimage/' , blank=True,null=True)
+    profile_image = models.ImageField(upload_to='myimage/',storage=ImageStorage(), blank=True,null=True)
     role = models.CharField(max_length=30)
     introduction = models.TextField(default="Hi")
     AboutMe = models.TextField()
