@@ -45,7 +45,6 @@ class contact(models.Model):
     
 class SocialMedia(models.Model):
     linkedin = models.URLField(blank=True,null=True)
-    whatsapp = models.URLField(blank=True,null=True)
     github = models.URLField(blank=True,null=True)
     email = models.EmailField(blank=True,null=True)
 
