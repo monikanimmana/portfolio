@@ -47,6 +47,7 @@ class SocialMedia(models.Model):
     linkedin = models.URLField(blank=True,null=True)
     github = models.URLField(blank=True,null=True)
     email = models.EmailField(blank=True,null=True)
+    whatsapp = models.URLField(blank=True,null=True)
 
 class Academic_Qualification(models.Model):
     degree_title = models.CharField(max_length=50)
