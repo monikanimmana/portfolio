@@ -29,8 +29,8 @@ It reflects my focus on **backend development**, structured project design, and 
 
 ## 🛠️ Tech Stack
 
-- 🐍 **Python** – Django, Django REST Framework  
-- 🌐 **Web** – HTML, CSS, Bootstrap  
+- 🐍 **Backend** – Python, Django, Django REST Framework  
+- 🌐 **Frontend** – HTML, CSS, Bootstrap  
 - 🗄️ **Database** – PostgreSQL  
 - ☁️ **Cloud & Deployment** – Render, WhiteNoise, Cloudinary  
 - 🔧 **Version Control** – Git, GitHub
@@ -38,7 +38,7 @@ It reflects my focus on **backend development**, structured project design, and 
 ---
 
 ## 📂 Project Structure
-
+```bash
 portfolio/
 │── static/        # CSS, JS, images
 │── media/         # Uploaded files
@@ -46,7 +46,7 @@ portfolio/
 │── portfolio/     # Core Django application
 │── requirements.txt
 │── manage.py
-
+```
 ---
 
 ## 📌 Practice & Learning (Current Focus)
